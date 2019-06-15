@@ -7,7 +7,7 @@ import {
     StyleSheet,
     Dimensions
  } from 'react-native';
-import MapView, { ProviderPropType, Market } from 'react-native-maps';
+import MapView, { ProviderPropType, Marker } from 'react-native-maps';
 import { FloatingAction } from 'react-native-floating-action';
 import Icnon from 'react-native-ionicons';
 
@@ -269,9 +269,10 @@ class MapStyle extends Component{
                             longitude: this.state.longitude,
                             latitudeDelta: LATITUDE_DELTA,
                             longitudeDelta: LONGITUDE_DELTA
-                        }}
+						}}
+						customMapStyle={customStyle}
                     >
-                        <Market
+                        <Marker
                             draggable
                             coordinate={{
                                 latitude: this.state.latitude,
@@ -285,7 +286,6 @@ class MapStyle extends Component{
                                 });
                             }}
                         />
-                        customMapStyle={customStyle}
                     </MapView>
                     <FloatingAction
                         position="left"
