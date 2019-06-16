@@ -1,0 +1,19 @@
+Creamos la carpeta Components para poder crear el archivo contador.js dentro de la carpeta contador que se creará despues de esta, para poder añadir el siguiente contenido
+ver imágen (imagenes/1.png)
+
+Ahora modificamos el contenido del archivo App.js que tambien estará dentro de la carpeta src de tal manera que quede de la siguiente manera ver imágen (imagenes/2.png)
+
+Modificamos la función render del componente contador cosa que así nos imprime algo, ver imágen (imagenes/3.png)
+
+Modificamos la funcion render del archivo App.js para que muestre otro valor ver imágen (imagenes/4.png)
+
+Con la propiedad props recibiremos todo el valor que se le paso al componente, si lo actualizamos se actualizara el valor. Podemos utilzar esto para mostrar el mismo compo
+con varios comportamientos
+Modificamos la funcion render de nuestro contador ver imágen (imagenes/5.png)
+
+Nuevamente modificamos el componente app para poder darnos cuenta de como es que trabajan estos elementos ver imágen (imagenes/6.png)
+
+Configuraremos el proyecto para que nos genere componentes de CSS, asi que usaremos el siguiente comando ver imágen (imagenes/7.png)
+con este comando expulsaremos la configuracion que trae REACT por defecto.
+
+Modificaremos el archivo llamado webpack.config.dev.js que se encuentra en la carpeta config entonces lo haremos ver de esta manera ver imágen (imagenes/8.png)
